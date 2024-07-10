@@ -28,6 +28,7 @@ app.post('/edit' , function(req,res){
   fs.rename(`./files/${req.body.previous}`, `./files/${req.body.new}.text` , 
     function(){
      res.redirect("/");
+    //  console.log(res)
   })
 })
 
